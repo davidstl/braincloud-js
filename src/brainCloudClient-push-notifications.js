@@ -1,5 +1,5 @@
 
-function BCPushNotifications() {
+export function BCPushNotifications() {
     var bc = this;
 
 	bc.pushNotification = {};

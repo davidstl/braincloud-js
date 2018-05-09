@@ -1,5 +1,5 @@
 
-function BCProfanity() {
+export function BCProfanity() {
     var bc = this;
 
 	bc.profanity = {};

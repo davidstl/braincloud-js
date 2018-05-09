@@ -2,7 +2,7 @@
  * @status complete
  */
 
-function BCSocialLeaderboard() {
+export function BCSocialLeaderboard() {
     var bc = this;
 
 	bc.socialLeaderboard = {};

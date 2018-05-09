@@ -1,5 +1,5 @@
 
-function BCPlaybackStream() {
+export function BCPlaybackStream() {
     var bc = this;
 
 	bc.playbackStream = {};

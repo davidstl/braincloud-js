@@ -1,5 +1,5 @@
 
-function BCEntity() {
+export function BCEntity() {
     var bc = this;
 
 	bc.entity = {};

@@ -1,5 +1,5 @@
 
-function BCEvents() {
+export function BCEvents() {
     var bc = this;
 
 	bc.event = {};

@@ -1,5 +1,5 @@
 
-function BCRedemptionCodes() {
+export function BCRedemptionCodes() {
     var bc = this;
 
 	bc.redemptionCode = {};

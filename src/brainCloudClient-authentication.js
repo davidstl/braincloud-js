@@ -1,5 +1,5 @@
 
-function BCAuthentication() {
+export function BCAuthentication() {
 	var bc = this;
 
   bc.authentication = {};

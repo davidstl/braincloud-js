@@ -1,5 +1,5 @@
 
-function BCFile() {
+export function BCFile() {
     var bc = this;
 	
 	bc.file = {};

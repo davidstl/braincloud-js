@@ -2,7 +2,7 @@
  * @status - incomplete - see STUB
  */
 
-function BCGlobalStatistics() {
+export function BCGlobalStatistics() {
     var bc = this;
 
 	bc.globalStatistics = {};

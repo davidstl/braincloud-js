@@ -3,7 +3,7 @@
 */
 
 
-function BCAbTest() {
+export function BCAbTest() {
     var bc = this;
 
 	bc.abtests = {};

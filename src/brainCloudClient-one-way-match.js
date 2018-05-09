@@ -1,5 +1,5 @@
 
-function BCOneWayMatch() {
+export function BCOneWayMatch() {
     var bc = this;
 
 	bc.oneWayMatch = {};

@@ -1,5 +1,5 @@
 
-function BCGlobalEntity() {
+export function BCGlobalEntity() {
     var bc = this;
 
 	bc.globalEntity = {};

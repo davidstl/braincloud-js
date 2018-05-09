@@ -4,7 +4,7 @@
 var abTestData;
 
 
-function BrainCloudManager ()
+export function BrainCloudManager ()
 {
     var bcm = this;
 

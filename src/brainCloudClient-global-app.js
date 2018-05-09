@@ -1,5 +1,5 @@
 
-function BCGlobalApp() {
+export function BCGlobalApp() {
     var bc = this;
 
 	bc.globalApp = {};

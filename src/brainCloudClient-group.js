@@ -1,5 +1,5 @@
 
-function BCGroup() {
+export function BCGroup() {
     var bc = this;
 
 	bc.group = {};

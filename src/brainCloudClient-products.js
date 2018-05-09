@@ -1,5 +1,5 @@
 
-function BCProducts() {
+export function BCProducts() {
     var bc = this;
 
 	bc.product = {};

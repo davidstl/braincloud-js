@@ -1,5 +1,5 @@
 
-function BCS3Handler() {
+export function BCS3Handler() {
     var bc = this;
 
 	bc.s3Handling = {};

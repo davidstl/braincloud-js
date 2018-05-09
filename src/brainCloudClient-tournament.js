@@ -1,5 +1,5 @@
 
-function BCTournament() {
+export function BCTournament() {
     var bc = this;
 
 	bc.tournament = {};

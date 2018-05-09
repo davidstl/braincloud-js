@@ -1,5 +1,5 @@
 
-function BCScript() {
+export function BCScript() {
     var bc = this;
 
 	bc.script = {};

@@ -1,5 +1,5 @@
 
-function BCFriend() {
+export function BCFriend() {
     var bc = this;
 
 	bc.friend = {};

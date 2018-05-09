@@ -2,7 +2,7 @@
  * @status - complete
  */
 
-function BCPlayerStatistics() {
+export function BCPlayerStatistics() {
     var bc = this;
 
 	bc.playerStatistics = {};

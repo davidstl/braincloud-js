@@ -1,4 +1,4 @@
-function BCReasonCodes() {
+export function BCReasonCodes() {
     var bc = this;
 
 	bc.reasonCodes = {};

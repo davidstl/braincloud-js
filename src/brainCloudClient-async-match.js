@@ -1,5 +1,5 @@
 
-function BCAsyncMatch() {
+export function BCAsyncMatch() {
     var bc = this;
 
 	bc.asyncMatch = {};

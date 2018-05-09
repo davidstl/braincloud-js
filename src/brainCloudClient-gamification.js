@@ -1,5 +1,5 @@
 
-function BCGamification() {
+export function BCGamification() {
     var bc = this;
 
 	bc.gamification = {};

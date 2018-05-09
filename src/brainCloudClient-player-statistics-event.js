@@ -1,5 +1,5 @@
 
-function BCPlayerStatisticsEvent() {
+export function BCPlayerStatisticsEvent() {
     var bc = this;
 
 	bc.playerStatisticsEvent = {};

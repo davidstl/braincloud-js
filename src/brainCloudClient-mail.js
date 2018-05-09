@@ -1,5 +1,5 @@
 
-function BCMail() {
+export function BCMail() {
     var bc = this;
 
 	bc.mail = {};

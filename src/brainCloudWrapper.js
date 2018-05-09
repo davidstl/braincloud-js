@@ -6,7 +6,9 @@
  * persisted upon successful authentication. When authenticating, any stored anonymous/profile ids will
  * be sent to the server. This strategy is useful when using anonymous authentication.
  */
-function BrainCloudWrapper(wrapperName) {
+import BrainCloudClient from './brainCloudClient';
+
+export function BrainCloudWrapper(wrapperName) {
 
     var bcw = this;
 
@@ -406,7 +408,7 @@ function BrainCloudWrapper(wrapperName) {
 
 		bcw._initializeIdentity(true);
 
-		authenticationCallback = function() {
+		let authenticationCallback = function() {
 			bcw.brainCloudClient.authentication.authenticateEmailPassword(
 				email,
 				password,
@@ -442,7 +444,7 @@ function BrainCloudWrapper(wrapperName) {
 
 		bcw._initializeIdentity(true);
 
-		authenticationCallback = function() {
+		let authenticationCallback = function() {
 			bcw.brainCloudClient.authentication.authenticateExternal(
 				userId,
 				token,
@@ -477,7 +479,7 @@ function BrainCloudWrapper(wrapperName) {
 
 		bcw._initializeIdentity(true);
 
-		authenticationCallback = function() {
+		let authenticationCallback = function() {
 			bcw.brainCloudClient.authentication.authenticateFacebook(
 				facebookId,
 				facebookToken,
@@ -511,7 +513,7 @@ function BrainCloudWrapper(wrapperName) {
 
 		bcw._initializeIdentity(true);
 
-		authenticationCallback = function() {
+		let authenticationCallback = function() {
 			bcw.brainCloudClient.authentication.authenticateGameCenter(
 				gameCenterId,
 				forceCreate,
@@ -545,7 +547,7 @@ function BrainCloudWrapper(wrapperName) {
 
 		bcw._initializeIdentity(true);
 
-		authenticationCallback = function() {
+		let authenticationCallback = function() {
 			bcw.brainCloudClient.authentication.authenticateGoogle(
 				googleId,
 				googleToken,
@@ -583,7 +585,7 @@ function BrainCloudWrapper(wrapperName) {
 
 		bcw._initializeIdentity(true);
 
-		authenticationCallback = function() {
+		let authenticationCallback = function() {
 			bcw.brainCloudClient.authentication.authenticateSteam(
 				userId,
 				sessionTicket,
@@ -619,7 +621,7 @@ function BrainCloudWrapper(wrapperName) {
 
 		bcw._initializeIdentity(true);
 
-		authenticationCallback = function() {
+		let authenticationCallback = function() {
 			bcw.brainCloudClient.authentication.authenticateTwitter(
 				userId,
 				token,
@@ -654,7 +656,7 @@ function BrainCloudWrapper(wrapperName) {
 
 		bcw._initializeIdentity(true);
 
-		authenticationCallback = function() {
+		let authenticationCallback = function() {
 			bcw.brainCloudClient.authentication.authenticateUniversal(
 				userId,
 				userPassword,
@@ -668,8 +670,8 @@ function BrainCloudWrapper(wrapperName) {
 		bcw.brainCloudClient.identity.getIdentities(getIdentitiesCallback(authenticationCallback));
 	};
 
-	getIdentitiesCallback = function(callback) {
-		identitiesCallback = function (response)
+	let getIdentitiesCallback = function(callback) {
+		let identitiesCallback = function (response)
 		{
 			if (bcw.brainCloudClient.isAuthenticated())
 			{

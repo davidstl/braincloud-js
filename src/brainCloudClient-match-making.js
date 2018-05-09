@@ -1,5 +1,5 @@
 
-function BCMatchMaking() {
+export function BCMatchMaking() {
     var bc = this;
 
 	bc.matchMaking = {};

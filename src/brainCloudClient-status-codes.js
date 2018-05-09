@@ -1,4 +1,4 @@
-function BCStatusCodes() {
+export function BCStatusCodes() {
     var bc = this;
 
 	bc.statusCodes = {};

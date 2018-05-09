@@ -1,5 +1,5 @@
 
-function BCTime() {
+export function BCTime() {
     var bc = this;
 
 	bc.time = {};

@@ -1,5 +1,5 @@
 
-function BCPlayerState() {
+export function BCPlayerState() {
     var bc = this;
 
 	bc.playerState = {};

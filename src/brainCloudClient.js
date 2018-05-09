@@ -3,7 +3,9 @@
 // Copyright 2016 bitHeads, inc.
 //----------------------------------------------------
 
-function BrainCloudClient() {
+import BCAbTest from './brainCloudClient-abtests';
+
+export function BrainCloudClient() {
 	var bcc = this;
 
 	bcc.name = "BrainCloudClient";

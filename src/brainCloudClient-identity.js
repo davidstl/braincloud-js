@@ -1,5 +1,5 @@
 
-function BCIdentity() {
+export function BCIdentity() {
     var bc = this;
 
 	bc.identity = {};

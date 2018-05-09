@@ -1,5 +1,5 @@
 
-function BCDataStream() {
+export function BCDataStream() {
     var bc = this;
 
 	bc.dataStream = {};
