@@ -14,13 +14,13 @@ console.log("--- Running JS unit tests ---");
 
 var fail_log = [];
 
-var filters = process.argv.slice(2)[0];
+var use_jquery = process.argv[2].toLowerCase() === "jquery";
+var filters = process.argv[3];
 
 var UserA = createUser("UserA", getRandomInt(0, 20000000));
 var UserB = createUser("UserB", getRandomInt(0, 20000000));
 
 var DEFAULT_TIMEOUT = 5000;
-var use_jquery = false;
 
 var GAME_ID = "";
 var SECRET = "";
@@ -3959,12 +3959,6 @@ async function run_tests()
 
 async function main()
 {
-    // Test XMLHttpRequest first
-    use_jquery = false;
-    await run_tests();
-
-    // Test with JQuery
-    use_jquery = true;
     await run_tests();
 
     console.log(((test_passed === test_count) ? "\x1b[32m[PASSED] " : "\x1b[31m[FAILED] ") + test_passed + "/" + test_count + "\x1b[0m");

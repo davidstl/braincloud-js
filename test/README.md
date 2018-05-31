@@ -1,3 +1,3 @@
 # Unit Tests
 
-Usage: `node test.js {regex filters}`
+Usage: `node test.js [jquery | xml] {regex filters}`
