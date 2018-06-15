@@ -365,6 +365,19 @@ function BrainCloudManager ()
 
                 var data = messages[c].data;
 
+                if (data)
+                {
+                    if (data.sessionId)
+                    {
+                        bcm.setSessionId(data.sessionId);
+                    }
+
+                    if (data.profileId)
+                    {
+                        bcm.authentication.profileId = data.profileId;
+                    }
+                }
+
                 if (bcm._inProgressQueue[c].service == "playerState" &&
                     (bcm._inProgressQueue[c].operation == "LOGOUT" || bcm._inProgressQueue[c].operation == "FULL_RESET"))
                 {
